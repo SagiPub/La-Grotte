@@ -3,47 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Café</title>
+    <link rel="shortcut icon" href="Assets/logo.JPG">
+    <title>Menu Cafe</title>
     <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <div class="menu-container">
-                <div class="image-container">
-                    <img src="Assets/Plan de travail 1.jpg" alt="page 1" class="image">
-                </div>
-                <div class="image-container1">
-                    <img src="Assets/Plan de travail 2.jpg" alt="page 2" class="image">
+    <form method="post">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="menu-container">
+                    <img src="Assets/Plan de travail 1.jpg" alt="page 1">
+                    <img src="Assets/Plan de travail 2.jpg" alt="page 2">
                 </div>
             </div>
-        </div>
-        <div class="mySlides">
-            <div class="menu-container">
-                <div class="image-container">
-                    <img src="Assets/Plan de travail 3.jpg" alt="page 3" class="image">
-                </div>
-                <div class="image-container1">
-                    <img src="Assets/Plan de travail 4.jpg" alt="page 4" class="image">
+    
+            <div class="mySlides fade">
+                <div class="menu-container">
+                    <img src="Assets/Plan de travail 3.jpg" alt="page 3">
+                    <img src="Assets/Plan de travail 4.jpg" alt="page 4">
                 </div>
             </div>
-        </div>
-        <div class="mySlides">
-            <div class="menu-container">
-                <div class="image-container">
-                    <img src="Assets/Plan de travail 5.jpg" alt="page 5" class="image">
-                </div>
-                <div class="image-container1">
-                    <img src="Assets/Plan de travail 6.jpg" alt="page 6" class="image">
+    
+            <div class="mySlides fade">
+                <div class="menu-container">
+                    <img src="Assets/Plan de travail 5.jpg" alt="page 5">
+                    <img src="Assets/Plan de travail 6.jpg" alt="page 6">
                 </div>
             </div>
+    
+            <!-- Boutons de navigation -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-    </div>
-
-    <!-- Navigation buttons -->
-    <a class="prev" onclick="prevImage()">&#10094;</a>
-    <a class="next" onclick="nextImage()">&#10095;</a>
+    
+    </form>
 
     <script src="menu.js"></script>
 </body>
 </html>
+
