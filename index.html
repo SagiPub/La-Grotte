@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Menu</title>
     <style>
-        /* General reset */
         * {
             margin: 0;
             padding: 0;
@@ -80,10 +79,8 @@
     </style>
 </head>
 <body>
-    <!-- Background image section -->
     <div class="background"></div>
 
-    <!-- Menu container for individual images -->
     <div class="menu-container">
         <img id="menuImage1" class="menu-image active" src="src/Plan de travail 1.jpg" alt="Menu Page 1">
         <img id="menuImage2" class="menu-image" src="src/Plan de travail 2.png" alt="Menu Page 2">
@@ -111,33 +108,18 @@
     </div>
 
     <script>
-        // Get all menu images
         const menuImages = document.querySelectorAll('.menu-image');
         let currentImageIndex = 0;
 
-        // Function to show the next image
         function nextImage() {
-            // Remove the active class from the current image
             menuImages[currentImageIndex].classList.remove('active');
-            
-            // Increment the index and loop back to the first image if necessary
             currentImageIndex = (currentImageIndex + 1) % menuImages.length;
-            console.log(`Next image: ${currentImageIndex}`);  // Debugging output
-            
-            // Add the active class to the next image
             menuImages[currentImageIndex].classList.add('active');
         }
 
-        // Function to show the previous image
         function prevImage() {
-            // Remove the active class from the current image
             menuImages[currentImageIndex].classList.remove('active');
-            
-            // Decrement the index and loop back to the last image if necessary
             currentImageIndex = (currentImageIndex - 1 + menuImages.length) % menuImages.length;
-            console.log(`Previous image: ${currentImageIndex}`);  // Debugging output
-            
-            // Add the active class to the previous image
             menuImages[currentImageIndex].classList.add('active');
         }
     </script>
